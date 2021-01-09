@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Mail";
+}
+
+<div class="container">
+    <div class="humanresource">
+        <form method="post" action="~/Mail/Mail" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Isminiz</label>
+                        <input type="text" class="form-control" name="Name" id="exampleInputEmail1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Son Çalıştığınız Firma</label>
+                        <input type="text" class="form-control" name="LastFirm" id="exampleInputPassword1">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Şehir</label>
+                        <input type="text" class="form-control" name="City" id="exampleInputEmail1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Telefon</label>
+                        <input type="text" class="form-control" name="Phone" id="exampleInputPassword1">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" name="Email" id="exampleInputEmail1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Özgeçmişinizi (CV) Ekleyiniz</label>
+                        <input type="file" class="form-control-file" name="dosya" id="exampleFormControlFile1">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+        </form>
+    </div>
+</div>
